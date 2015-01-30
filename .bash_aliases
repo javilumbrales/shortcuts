@@ -1,14 +1,16 @@
 alias ll='ls -l'
 
 #Convert MAC files endlines to unix LF
-alias tounix='tr '\''\r'\'' '\''\n'\'''
+alias tounix="tr '\r' '\n'"
 
-#Start and stop de VM from the commandline
+#Start and stop the VM from the command-line
 alias startvm='nohup VBoxHeadless --startvm "VMNAME" &'
 alias stopvm='VBoxManage controlvm "VMNAME" poweroff'
 
-#Symfony2
+#Symfony2 helpers
 alias cachewarm='php app/console cache:warmup'
+alias gettokendev="curl -v 'http://SERVER-REST-URL/oauth/v2/token' -d 'grant_type=password&username=USER&password=PASS'  -u PublicClientIds:ClientSecret"
+
 
 #PHP Storm Enable/Disable command-line debugger
 alias clideb='export XDEBUG_CONFIG="idekey=PhpStorm1 remote_autostart=1 remote_enable=1"'
