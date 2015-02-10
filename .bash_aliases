@@ -33,5 +33,5 @@ alias gitfiles='git show --pretty="format:" --name-only'
 alias gitperms='git config core.fileMode false'
 #Pull and push to your personal REMOTE always
 alias gpull='git pull MYREMOTE'
-alias gpush='git push MYREMOTE'
-
+#Push only the current branch
+alias gpush='git push MYREMOTE `git symbolic-ref HEAD | cut -d/ -f3-`'
