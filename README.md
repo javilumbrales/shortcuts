@@ -19,3 +19,5 @@ Make sure your `~/.bashrc` (`~/.profile` on Mac) includes the files with somethi
     
     
 Feel free to contribute.
+
+Find more cool stuf like this and/or get in touch at http://thedeveloperworldisyours.com/
